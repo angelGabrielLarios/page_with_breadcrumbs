@@ -11,13 +11,13 @@ export const WhatIsView = () => {
                 {/* gradient end */}
 
                 <article className="w-full md:w-[44rem] md:mx-auto">
-                    <h1 className="font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] text-center mb-4 animate-fade-right animate-duration-[2000ms]">
+                    <h1 className="font-poppins font-semibold text-3xl md:text-4xl lg:text-6xl text-white text-center mb-4 animate-fade-right animate-duration-[2000ms]">
                         ¿Que{" "}
                         <span className="text-gradient">es?</span>
                     </h1>
 
 
-                    <p className={`${styles.paragraph} animate-fade-right animate-duration-[2000ms]`}>
+                    <p className={`${styles.paragraph} text-sm md:text-base animate-fade-right animate-duration-[2000ms]`}>
 
                         El desarrollo frontend moderno es la práctica de construir la interfaz de usuario de aplicaciones web utilizando tecnologías y enfoques contemporáneos. Se caracteriza por el uso de frameworks y bibliotecas avanzadas como React, Angular o Vue.js, la adopción de características recientes de JavaScript (ECMAScript 6 y posteriores), y el desarrollo basado en componentes para modularidad y reutilización eficiente del código. La construcción de aplicaciones de una sola página (SPA) con enrutamiento del lado del cliente, la implementación de modelos reactivos y la gestión del estado global son elementos clave. Además, se enfoca en prácticas como pruebas automáticas, diseño responsivo, optimización del rendimiento y despliegue continuo, garantizando así interfaces de usuario eficientes, atractivas y alineadas con las tendencias y estándares actuales del desarrollo web
                     </p>

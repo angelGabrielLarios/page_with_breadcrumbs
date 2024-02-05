@@ -1,15 +1,7 @@
 export * from "./Navbar.tsx";
-export * from "./Billing.tsx";
-export * from "./CardDeal.tsx";
-export * from "./Business.tsx";
-export * from "./Clients.tsx";
-export * from "./CTA.tsx";
-export * from "./Stats.tsx";
+
 export * from "./Footer.tsx";
-export * from "./Testimonials.tsx";
 export * from "./Hero.tsx";
-export * from "./Button.tsx";
-export * from "./GetStarted.tsx";
 export * from "./CardFramework.tsx";
 export * from "./ButtonCustom.tsx";
 export * from "./ButtonAnchor.tsx";

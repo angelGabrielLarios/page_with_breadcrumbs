@@ -17,12 +17,12 @@ export const CardFramework = ({ framework, linkDocs, nameImg }: Props) => {
 
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-[#33bbcf]">{framework}</h5>
                 <a href={linkDocs} target="_">
-                    <img src={`/public/images/frameworks/${nameImg}.png`} alt="" className="block w-32 mx-auto" />
+                    <img src={`/images/frameworks/${nameImg}.png`} alt="" className="block w-32 mx-auto" />
                 </a>
 
 
                 <div className="border-b border-gray-200 dark:border-gray-700 ">
-                    <ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-400 items-center justify-center">
+                    <ul className="flex flex-wrap -mb-px  font-medium text-center text-gray-400 items-center justify-center font-poppins text-xs md:text-base">
                         <li className="me-2">
                             <NavLink to="creator" className={({ isActive }) => {
                                 return `inline-flex items-center justify-center p-4 border-b-2 border-transparent rounded-t-lg  hover:border-gray-300 hover:text-gray-300 transition-colors ease-in duration-300 ${isActive ? 'active-tab' : ''}`

@@ -1,6 +1,6 @@
 
 
-import { NavLink, useMatches } from "react-router-dom";
+import { useMatches } from "react-router-dom";
 import { styles } from "../style";
 
 
@@ -22,7 +22,7 @@ export const Breadcrumbs = () => {
         .map((match) => match.handle.crumb(match.data));
 
     return (
-        <nav className={`${styles.paddingX}`}>
+        <nav className={`${styles.paddingX} text-xs md:text-sm`}>
             {/*  {crumbs.map((crumb, index) => (
                 <li key={index}>{crumb}</li>
             ))} */}

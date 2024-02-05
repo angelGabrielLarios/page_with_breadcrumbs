@@ -2,6 +2,7 @@ import { NavLink, Outlet } from "react-router-dom"
 
 
 import { IconBrandReact, IconBrandAngular, IconBrandVue, IconBrandSvelte } from '@tabler/icons-react'
+import { styles } from "../style"
 
 export const FrameworksView = () => {
     return (
@@ -14,12 +15,12 @@ export const FrameworksView = () => {
                 {/* gradient end */}
 
                 <article className="w-full md:w-[44rem] md:mx-auto">
-                    <h1 className="font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] text-center mb-4 animate-fade-right animate-duration-[2000ms]">
+                    <h1 className="font-poppins font-semibold text-3xl md:text-4xl lg:text-6xl text-white text-center mb-4 animate-fade-right animate-duration-[2000ms]">
                         Frameworks {" "}
                         <span className="text-gradient">Modernos</span>
                     </h1>
 
-                    <p className="text-white text-center mb-2">
+                    <p className={`${styles.paragraph} text-sm md:text-base text-center`}>
                         Escoge un framework
                     </p>
 
