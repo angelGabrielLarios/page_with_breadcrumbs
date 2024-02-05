@@ -22,7 +22,7 @@ export const Breadcrumbs = () => {
         .map((match) => match.handle.crumb(match.data));
 
     return (
-        <nav className={`${styles.paddingX} text-xs md:text-sm`}>
+        <nav className={`${styles.paddingX} text-xs md:text-sm font-poppins`}>
             {/*  {crumbs.map((crumb, index) => (
                 <li key={index}>{crumb}</li>
             ))} */}
