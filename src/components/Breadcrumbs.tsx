@@ -1,7 +1,9 @@
 
 
-import { useMatches } from "react-router-dom";
+import { Params, useMatches } from "react-router-dom";
 import { styles } from "../style";
+
+
 
 
 
@@ -10,16 +12,31 @@ const IconBreadcrumb = <svg xmlns="http://www.w3.org/2000/svg" className="icon i
     <path d="M5 18l14 -6l-14 -6" />
 </svg>
 
+interface IMatches {
+    id: string;
+    pathname: string;
+    params: Params<string>;
+    data: unknown;
+    handle: unknown;
+}
+type HandleType = {
+    crumb: (param?: string) => React.ReactNode;
+}
+
 export const Breadcrumbs = () => {
 
-
-    const matches = useMatches();
+    const matches: IMatches[] = useMatches();
     const crumbs = matches
-        // first get rid of any matches that don't have handle and crumb
-        .filter((match) => Boolean(match.handle?.crumb))
-        // now map them into an array of elements, passing the loader
-        // data to each one
-        .map((match) => match.handle.crumb(match.data));
+        .filter((match) =>
+            Boolean(match.handle && (match.handle as
+                HandleType).crumb)
+        )
+        .map((match) => {
+            const crumb = (match.handle as HandleType).crumb(
+                match.data as string | undefined
+            );
+            return crumb as React.ReactNode;
+        });
 
     return (
         <nav className={`${styles.paddingX} text-xs md:text-sm font-poppins`}>

@@ -14,7 +14,7 @@ export const Navbar = () => {
         <IconTerminal2 className="text-blue-600 size-10" />
       </NavLink>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none lg:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
@@ -29,7 +29,7 @@ export const Navbar = () => {
         ))}
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="lg:hidden flex flex-1 justify-end items-center">
         <button
           onClick={() => setToggle(!toggle)}
           className="text-blue-500"
