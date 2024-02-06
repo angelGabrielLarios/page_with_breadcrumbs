@@ -10,7 +10,7 @@ export const RenderView = () => {
                 <article className="w-full md:w-[44rem] md:mx-auto">
 
                     <h1 className="flex-1 font-poppins font-semibold text-3xl md:text-4xl lg:text-6xl text-white animate-fade-right animate-duration-[2000ms]">
-                        Rede<span className="text-gradient">rizado</span>
+                        Rende<span className="text-gradient">rizado</span>
                     </h1>
 
 
