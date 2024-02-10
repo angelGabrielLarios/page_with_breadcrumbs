@@ -14,11 +14,6 @@ export const RenderView = () => {
                     </h1>
 
 
-
-
-
-
-
                     <div className="border-b border-gray-200 dark:border-gray-700 ">
                         <ul className="flex flex-wrap -mb-px  font-medium text-center text-gray-400 items-center justify-center font-poppins text-xs md:text-base">
                             <li className="me-2">
